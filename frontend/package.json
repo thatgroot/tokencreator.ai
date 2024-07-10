@@ -1,0 +1,81 @@
+{
+  "name": "token_creator_ai",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "fs": "0.0.1-security",
+    "openai": "^4.47.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.2.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.7",
+    "@openzeppelin/hardhat-upgrades": "^3.1.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=18.0.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.8",
+    "chai": "^4.2.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "ethers": "^6.12.1",
+    "hardhat": "^2.22.4",
+    "hardhat-gas-reporter": "^1.0.8",
+    "postcss": "^8.4.16",
+    "solc": "^0.8.26",
+    "solidity-coverage": "^0.8.0",
+    "tailwindcss": "^3.1.8",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.3.0",
+    "typescript": "^4.5.4",
+    "vite": "^5.2.3",
+    "vite-jsconfig-paths": "^2.0.1",
+    "vite-plugin-node-polyfills": "^0.22.0",
+    "vite-plugin-svgr": "^4.2.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "deploy": "pnpm run build && cd build && vercel deploy --prod",
+    "preview": "vite preview"
+  },
+  "eslintConfig": {
+    "root": true
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

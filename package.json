@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "cd frontend && yarn dev",
+    "server": "cd server && yarn dev"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.7.2",
+    "openai": "^4.51.0"
+  },
+  "devDependencies": {
+    "solc": "0.8.24"
+  }
+}
